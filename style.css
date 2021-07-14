@@ -7,6 +7,7 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0%;
 }
+/* Banner-Part-Start */
 .Banner{
     border: none;
     display: flex;
@@ -14,12 +15,10 @@ body{
     height: 700px;
 }
 .fas{
-    align-items: right;
-    justify-items:right;
+    display: inline-block;
+    justify-content: right;
     font-size: 40px;
-    color: honeydew;
-
-    
+    color:white;
 }
 .Bannerleft{
     width:50%;
@@ -37,13 +36,15 @@ body{
     font-weight: 400;
     padding: 10px 40px;
     border-radius: 5px;
+    margin-left: 15px;
 }
 .Bannerright{
     margin: 5% 5%;
     padding:5% 5% 5% 5%
 }
+/* Banner-Part-End */
 
-
+/* All-Players-Section-Start */
 .Playerslist{
       display: grid;
       margin: 10% 15% 10% 15%;
@@ -62,9 +63,7 @@ body{
   .player.Playerimage img{
 
     width: 330px;
-    height: 256px;
-    
-    
+    height: 256px; 
     
 }
 .Playerinfo{
@@ -72,8 +71,37 @@ body{
     width: 300px;
     height: 230px;
     
+} 
+/* All-Players-Section-Start */
+/* Extra-Part-Start  */
+.Extra{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-.footer{
+/* form-Create */
+h2{
+    margin-left: 15px;
+    color: rgb(43, 92, 226);
+}
+.input{
+    display: flex;
+    width: 50%;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+  /* Extra-Part-End  */
+  /* Footer-Part-Start  */
+  .footer{
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -87,9 +115,11 @@ body{
 .Copyright{
     font-size: 100%;
 }
+/* Footer-Part-End  */
 /* Media-Queries */
 /* Mobile-Device */
 @media only screen and (max-width:688px){
+    /* Banner-Part-Start */
     .Banner{
         border: none;
         display: flex;
@@ -123,7 +153,8 @@ body{
         left: 344px;
         
     }
-
+/* Banner-Part-End */
+/* All-Player-Section-Start */
     .Playerslist{
         display: grid;
         margin: 1% 1% 1% 1%;
@@ -135,7 +166,21 @@ body{
         text-align: left;
         box-shadow: 10px 10px 10px gray;
           
-    }  
+    } 
+    /* All-Player-Section-End */
+    /* Extra-Part-Start  */
+    .Extra{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .video{
+        padding: 1% 1%;
+        justify-content: left;
+        width:280px !important;
+        
+    }
+    /* Extra-Part-End  */
+     /* Footer-Part-Start  */
     .footer{
         display: flex;
        flex-direction: column;
@@ -145,6 +190,7 @@ body{
     .footer img{
         width: 200px;
     }
+     /* Footer-Part-End */
 }
     
 
