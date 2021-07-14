@@ -13,6 +13,14 @@ body{
     background-color:blueviolet;
     height: 700px;
 }
+.fas{
+    align-items: right;
+    justify-items:right;
+    font-size: 40px;
+    color: honeydew;
+
+    
+}
 .Bannerleft{
     width:50%;
     margin: 10% 5%;
@@ -35,6 +43,7 @@ body{
     padding:5% 5% 5% 5%
 }
 
+
 .Playerslist{
       display: grid;
       margin: 10% 15% 10% 15%;
@@ -44,17 +53,11 @@ body{
       grid-column-end: 20px; */
 }  
 .Player{
-     display:box;
-     border: 1px solid crimson;
-     box-shadow:linear-gradient(blue,aqua);;
-     Width:330px;
-     Height:474px;
-     /* Padding:20px 20px;  */
-     
-     
-     /* Top:747px;
-     Left:540px; */
-     
+    margin: 10% 10%;
+    padding: 1% 1%;
+    text-align: left;
+    box-shadow: 10px 10px 10px gray;
+      
 }  
   .player.Playerimage img{
 
@@ -62,17 +65,13 @@ body{
     height: 256px;
     
     
+    
 }
 .Playerinfo{
-    /* display: flex;
-    flex-direction: column; */
-    align-items: center;
-    padding: 0px;
-    /* position: static; */
+    
     width: 300px;
-    height: 154px;
-    left: 0px;
-    top: 272px;
+    height: 230px;
+    
 }
 .footer{
      display: flex;
@@ -126,8 +125,17 @@ body{
     }
 
     .Playerslist{
+        display: grid;
+        margin: 1% 1% 1% 1%;
         grid-template-columns: repeat(1,1fr);
     }
+    .Player{
+        margin: 2% 2%;
+        padding: 1% 1%;
+        text-align: left;
+        box-shadow: 10px 10px 10px gray;
+          
+    }  
     .footer{
         display: flex;
        flex-direction: column;
