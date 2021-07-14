@@ -1,5 +1,10 @@
+/* Font Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common Style */
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0%;
 }
 .Banner{
@@ -10,27 +15,13 @@ body{
 }
 .Bannerleft{
     width:50%;
-    margin: 20% 5%;
+    margin: 10% 5%;
     align-content: center;
     color: cornsilk;
-    font-weight:bold;
+    font-size:30px;
+    
 
 }
-h1{
-    font-weight: bold;
-}
-.Bannerright{
-    margin: 5% 5%;
-    padding:5% 5% 5% 5%
-}
-/* button{
-    background-image: linear-gradient(pink,red);
-    height: 20px;
-    width: 60px;
-    color: cornsilk;
-    padding: 1% 5%;
-
-} */
 .button {
     text-decoration: none;
     color: white;
@@ -38,4 +29,114 @@ h1{
     font-weight: 400;
     padding: 10px 40px;
     border-radius: 5px;
-  }
+}
+.Bannerright{
+    margin: 5% 5%;
+    padding:5% 5% 5% 5%
+}
+
+.Playerslist{
+      display: grid;
+      margin: 10% 15% 10% 15%;
+      grid-template-columns: repeat(3,1fr);
+      grid-column-gap: 10px;
+      /* grid-column-start: 20px;
+      grid-column-end: 20px; */
+}  
+.Player{
+     display:box;
+     border: 1px solid crimson;
+     box-shadow:linear-gradient(blue,aqua);;
+     Width:330px;
+     Height:474px;
+     /* Padding:20px 20px;  */
+     
+     
+     /* Top:747px;
+     Left:540px; */
+     
+}  
+  .player.Playerimage img{
+
+    width: 330px;
+    height: 256px;
+    
+    
+}
+.Playerinfo{
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    padding: 0px;
+    /* position: static; */
+    width: 300px;
+    height: 154px;
+    left: 0px;
+    top: 272px;
+}
+.footer{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.Social-Icons{
+    
+    font-size: 30px;
+
+}
+.Copyright{
+    font-size: 100%;
+}
+/* Media-Queries */
+/* Mobile-Device */
+@media only screen and (max-width:688px){
+    .Banner{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        background-color:blueviolet;
+        height: 700px;
+    }
+    .Bannerleft{
+        width: 300px;
+        height: 138px;
+        margin: 10% 5%;
+        align-content: left;
+        color: cornsilk;
+        font-size:15px;
+        
+    
+    }
+    .button {
+        text-decoration: none;
+        color: white;
+        background-image: linear-gradient(blue,aqua);
+        font-weight: 50;
+        padding: 5px 5px;
+        border-radius: 5px;
+    }
+    .Bannerright img{
+        justify-content: left;
+        align-content: left;
+        margin-top: 30%;
+        width: 290px;
+        left: 344px;
+        
+    }
+
+    .Playerslist{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer{
+        display: flex;
+       flex-direction: column;
+       justify-content: left;
+       align-items: left;
+    }
+    .footer img{
+        width: 200px;
+    }
+}
+    
+
