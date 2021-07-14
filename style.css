@@ -1,0 +1,41 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+}
+.Banner{
+    border: none;
+    display: flex;
+    background-color:blueviolet;
+    height: 700px;
+}
+.Bannerleft{
+    width:50%;
+    margin: 20% 5%;
+    align-content: center;
+    color: cornsilk;
+    font-weight:bold;
+
+}
+h1{
+    font-weight: bold;
+}
+.Bannerright{
+    margin: 5% 5%;
+    padding:5% 5% 5% 5%
+}
+/* button{
+    background-image: linear-gradient(pink,red);
+    height: 20px;
+    width: 60px;
+    color: cornsilk;
+    padding: 1% 5%;
+
+} */
+.button {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(blue,aqua);
+    font-weight: 400;
+    padding: 10px 40px;
+    border-radius: 5px;
+  }
